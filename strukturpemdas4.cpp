@@ -6,5 +6,10 @@ struct DetailAlamat{
     string kota;
 };
 
-
+struct Mahasiswa{
+    string nim;
+    string nama;
+    DetailAlamat Alamat;
+    string umur;
+};
 
