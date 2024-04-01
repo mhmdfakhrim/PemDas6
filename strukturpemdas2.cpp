@@ -10,9 +10,9 @@ struct DetailAlamat
 struct Mahasiswa
 {
   string nim;
-  string nama;
+  char nama[25];
   DetailAlamat alamat;
-  string umur;
+  int umur;
 };
 
 int main(){
@@ -25,9 +25,10 @@ int main(){
   cout << "Alamat Mahasiswa : ";
   cout << "\t Nama Desa : ";
   cin >> mhs.alamat.desa;
+  cin.ignore(1,'\n');
   cout << "\t Nama Kota : ";
   cin >> mhs.alamat.kota;
-
+  cin.ignore(1,'\n');
   cout << "Umur Mahasiswa : ";
   cin >> mhs.umur;
 
