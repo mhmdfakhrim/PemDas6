@@ -13,3 +13,20 @@ struct Mahasiswa{
     string umur;
 };
 
+int main(){
+    Mahasiswa mhs[3];
+    for(int i=0;i<3;i++){
+        cout << "Data ke- " << (i+1)<<":"<<endl;
+        cout << "Nomer Mahasiswa: ";
+        getline(cin, mhs[i].nim);
+        cout << "Nama Mahasiswa: ";
+        cin >> mhs[i].nama;
+        getline(cin, mhs[i].nama);
+        cout << "Alamat Mahasiswa: " << endl;
+        cout << "\t Nama Desa: ";
+        cin >> mhs[i].Alamat.desa;
+        cout << "\t Nama Kota: ";
+        cin >> mhs[i].Alamat.kota;
+        cout << "Umur Mahsiswa: ";
+        cin >> mhs[i].umur;
+    }
